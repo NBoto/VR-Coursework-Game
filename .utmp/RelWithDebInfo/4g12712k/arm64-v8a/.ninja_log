@@ -1,0 +1,11 @@
+# ninja log v5
+845	1757	7283215422244912	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	94cb50fd69cd5bac
+71	1793	7283215422820709	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	d9e95589a29cdf3
+152	2037	7283215426181982	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	68d33d7e8b8e7cb2
+376	2059	7283215426516619	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	f9bf5fefcf1509b0
+503	2091	7283215426915569	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e32a1bd5f742b4ed
+227	2360	7283215429582645	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c9b1dfbe1f509b9e
+2	2434	7283215430365433	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c60609bc7d6d6817
+639	2455	7283215430557097	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	24bc668fe5c9d573
+1768	2509	7283215429378949	C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4g12712k/obj/arm64-v8a/libswappywrapper.so	30ef1e270d25f59b
+2456	2860	7283215433680169	C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4g12712k/obj/arm64-v8a/libgame.so	f3c5f7931ac82de8

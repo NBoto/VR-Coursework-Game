@@ -1,0 +1,8 @@
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/temp/NP Lab VR Game/Immersive Tech VR Lab Game/.utmp/RelWithDebInfo/4g12712k/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
