@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
-    [SerializeField] private InputActionProperty jumpButton;
+    [SerializeField] private InputAction jumpButton;
     [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private CharacterController cc;
     [SerializeField] private LayerMask groundLayers;
@@ -13,19 +13,25 @@ public class PlayerJump : MonoBehaviour
     private float gravity = Physics.gravity.y;
     private Vector3 movement;
 
+    private void Start()
+    {
+        //Jump();
+    }
+
     private void Update()
     {
         bool _isGrounded = IsGrounded();
 
-        if (jumpButton.action.WasPressedThisFrame() && _isGrounded)
+        if (jumpButton.WasPressedThisFrame())
         {
             Debug.Log("Ahahahha");
             Jump();
         }
     }
 
-    private void Jump()
+    public void Jump()
     {
+        Debug.Log("Jump?");
         movement.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
     }
 
