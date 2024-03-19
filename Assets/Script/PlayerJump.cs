@@ -5,39 +5,41 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
-    [SerializeField] private InputAction jumpButton;
-    [SerializeField] private float jumpHeight = 3f;
-    [SerializeField] private CharacterController cc;
-    [SerializeField] private LayerMask groundLayers;
-
-    private float gravity = Physics.gravity.y;
-    private Vector3 movement;
+    [SerializeField] private InputActionReference jump;
+    [SerializeField] public GameObject Wall;
+    [SerializeField] private float jumpHeight = 85;
+    [SerializeField] LayerMask groundMask;
+    [SerializeField] float gravity = -1f;
+    [SerializeField] public CharacterController CC;
+    Vector3 movement = Vector3.zero;
+    public bool isGrounded;
 
     private void Start()
     {
+        jump.action.performed += Jump;
         //Jump();
     }
 
     private void Update()
     {
-        bool _isGrounded = IsGrounded();
-
-        if (jumpButton.WasPressedThisFrame())
+        isGrounded = Physics.CheckSphere(transform.position - (new Vector3(0, transform.localScale.y, 0)), 0.1f, groundMask);
+        if (isGrounded)
         {
-            Debug.Log("Ahahahha");
-            Jump();
+            movement.y = 0;
         }
+        else
+        {
+            movement.y += gravity * Time.deltaTime;
+        }
+
+        CC.Move(movement * Time.deltaTime);
     }
 
-    public void Jump()
+    private void Jump(InputAction.CallbackContext context)
     {
         Debug.Log("Jump?");
-        movement.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
-    }
-
-    [SerializeField] private bool IsGrounded()
-    {
-        return Physics.CheckSphere(transform.position, 0.2f, groundLayers);
+        movement.y = Mathf.Sqrt(-2f * gravity * jumpHeight);
+        //Wall.SetActive(false);
     }
 
 }
