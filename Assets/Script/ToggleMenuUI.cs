@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +11,8 @@ public class ToggleMenuUI : MonoBehaviour
     private void Start()
     {
         toggleUI.action.performed += ToggleUI;
+        this.gameObject.SetActive(false);
+        IsActive = false;
         //Jump();
     }
     private void ToggleUI(InputAction.CallbackContext context)
