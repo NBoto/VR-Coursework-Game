@@ -445,9 +445,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "ToggleUI",
                     "type": "Button",
-                    "id": "f4c0fb9f-afdf-4ca2-885c-4bd0a5567b50",
+                    "id": "58bafe5c-d230-42ec-abac-83e3f768a676",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -688,23 +688,34 @@
                 },
                 {
                     "name": "",
-                    "id": "fdeda8f2-acba-4171-8596-855407787768",
-                    "path": "<OculusTouchController>/gripPressed",
+                    "id": "450bf300-0794-4b88-b7b3-b6ce2d318174",
+                    "path": "<XRController>{LeftHand}/menuButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "Jump",
+                    "action": "ToggleUI",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "22dcce94-c0e4-4f52-8005-59177164f50d",
-                    "path": "<Keyboard>/k",
+                    "id": "694c5c61-ea8c-441a-9b71-e962ecbac2ae",
+                    "path": "<XRController>{RightHand}/menuButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "ToggleUI",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5021c66f-5480-4207-87be-2305bf1ea28e",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "ToggleUI",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1270,6 +1281,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "9a9c218f-95ee-4110-acf8-0777b3e5454c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1501,6 +1521,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Grip Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35be1f6b-9fda-472c-9a3f-97978c29d73e",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
