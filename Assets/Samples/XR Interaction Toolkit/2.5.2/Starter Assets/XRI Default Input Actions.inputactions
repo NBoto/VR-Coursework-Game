@@ -711,7 +711,7 @@
                 {
                     "name": "",
                     "id": "5021c66f-5480-4207-87be-2305bf1ea28e",
-                    "path": "<Keyboard>/escape",
+                    "path": "<OculusTouchController>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
