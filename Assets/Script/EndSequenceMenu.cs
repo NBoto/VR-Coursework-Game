@@ -29,7 +29,7 @@ public class EndSequenceMenu : MonoBehaviour
                 fadeanima.SetTrigger("FadeOut");
             }
         }
-        if (TransitionTimer >= 450)
+        if (TransitionTimer >= 250)
         {
             SceneManager.LoadScene("SCIFIESCAPE");
         }

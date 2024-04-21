@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,7 +8,9 @@ public class ToggleMenuUI : MonoBehaviour
 {
     [SerializeField] private InputActionReference toggleUI;
     [SerializeField] public GameObject LeftRay;
+    //[SerializeField] public GameObject UIMenu;
     private bool IsActive = false;
+    private float Delay = 250;
     private Vector3 InitScale;
 
     private void Start()
@@ -18,6 +21,14 @@ public class ToggleMenuUI : MonoBehaviour
         IsActive = false;
         transform.localScale = new Vector3(0, 0, 0);
         //Jump();
+    }
+
+    private void Update()
+    {
+        if (Delay > 0)
+        {
+            Delay--;
+        }
     }
 
     IEnumerator ScaleTo(Vector3 newScale)
@@ -35,18 +46,22 @@ public class ToggleMenuUI : MonoBehaviour
     private void ToggleUI(InputAction.CallbackContext context)
     {
         Debug.Log("ToggledMenu");
-        if (!IsActive)
+        if (!IsActive & Delay <= 0)
         {
             StartCoroutine(ScaleTo(InitScale));
             //this.gameObject.SetActive(true);
             //LeftRay.gameObject.SetActive(false);
+            //UIMenu.SetActive(true);
+            Delay = 250;
             IsActive = true;
         }
-        else
+        if (IsActive & Delay <= 0)
         {
             StartCoroutine(ScaleTo(new Vector3(0,0,0)));
             //this.gameObject.SetActive(false);
             //LeftRay.gameObject.SetActive(true);
+            //UIMenu.SetActive(false);
+            Delay = 250;
             IsActive = false;
         }
     }
