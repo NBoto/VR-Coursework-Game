@@ -1,0 +1,21 @@
+# ninja log v5
+221	1324	7354133602680280	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	35827ed860043e5
+3	2618	7354133616631968	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	89443f8886ce57be
+20	2254	7354133611614651	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8320c660021eea84
+37	2683	7354133617604729	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e77521d0603c4aaa
+182	2524	7354133612103636	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8209994becce0d5f
+120	2579	7354133615340093	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2da197a49bc02bfb
+1328	2994	7354133619579851	E:/Honours Year/Semester 2/Immersive Technology (VR)/VR Coursework Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6z1i6c95/obj/arm64-v8a/libswappywrapper.so	c98a2d5ceeeb74d8
+70	2581	7354133615684288	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	76ad20d36ff85166
+136	2598	7354133616712003	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a822653c6d0f9c3f
+2683	3072	7354133620452377	E:/Honours Year/Semester 2/Immersive Technology (VR)/VR Coursework Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6z1i6c95/obj/arm64-v8a/libgame.so	1b649395a69a9c01
+125	625	7354158270430770	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	35827ed860043e5
+21	1414	7354158278512642	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8320c660021eea84
+97	1430	7354158278662238	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8209994becce0d5f
+65	1484	7354158279175985	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a822653c6d0f9c3f
+82	1485	7354158279305638	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	76ad20d36ff85166
+5	1497	7354158279584885	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e77521d0603c4aaa
+38	1607	7354158280741454	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	89443f8886ce57be
+51	1653	7354158281152392	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2da197a49bc02bfb
+650	1746	7354158281232512	E:/Honours Year/Semester 2/Immersive Technology (VR)/VR Coursework Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6z1i6c95/obj/arm64-v8a/libswappywrapper.so	c98a2d5ceeeb74d8
+1653	2045	7354158283584443	E:/Honours Year/Semester 2/Immersive Technology (VR)/VR Coursework Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6z1i6c95/obj/arm64-v8a/libgame.so	1b649395a69a9c01

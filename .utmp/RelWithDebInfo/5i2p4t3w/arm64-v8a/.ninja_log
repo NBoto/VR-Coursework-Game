@@ -1,0 +1,11 @@
+# ninja log v5
+1767	3024	7354152317059644	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	96e46d1fadd5c58d
+80	3880	7354152325295128	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	17a92814e96d9a7d
+128	4388	7354152325894643	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7b9c77c0002836eb
+41	4458	7354152325554925	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	5b8c799bc0a7c620
+1	4474	7354152327866713	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	6450339f42fa6b8b
+908	4484	7354152331446792	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	22c808cba203b9e3
+1007	4500	7354152332046684	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8ec279e44ea280d4
+257	4708	7354152334462570	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1fc98775fd0d0ad0
+3027	4946	7354152333883626	E:/Honours Year/Semester 2/Immersive Technology (VR)/VR Coursework Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5i2p4t3w/obj/arm64-v8a/libswappywrapper.so	e7fe0f29bf018ee9
+4709	5296	7354152338871246	E:/Honours Year/Semester 2/Immersive Technology (VR)/VR Coursework Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5i2p4t3w/obj/arm64-v8a/libgame.so	e669c8fe01daed84

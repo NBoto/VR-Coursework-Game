@@ -15,11 +15,12 @@ public class FPS_Movement : MonoBehaviour
     [SerializeField] float gravity = -30f;
     Vector3 verticalV = Vector3.zero; 
     [SerializeField] LayerMask groundMask;
+    [SerializeField] LayerMask teleportMask;
     public bool isGrounded;
 
     private void Update()
     {
-        isGrounded = Physics.CheckSphere(transform.position - (new Vector3(0, transform.localScale.y, 0)), 0.2f, groundMask);
+        isGrounded = Physics.CheckSphere(transform.position - (new Vector3(0, transform.localScale.y, 0)), 0.2f, groundMask | teleportMask);
         if (isGrounded)
         {
             verticalV.y = 0;

@@ -5,6 +5,8 @@ using UnityEngine;
 public class BatteryForDoorInput : MonoBehaviour
 {
     [SerializeField] GameObject BatteryOperatedDoor;
+    //[SerializeField] AudioSource BatteryOperatedDoorOpenSFX;
+    //[SerializeField] AudioSource BatteryOperatedDoorCloseSFX;
     bool BatteryOperated;
     // Start is called before the first frame update
     void Start()
@@ -18,10 +20,12 @@ public class BatteryForDoorInput : MonoBehaviour
         if (BatteryOperated)
         {
             BatteryOperatedDoor.GetComponent<Animator>().SetBool("character_nearby", true);
+            //BatteryOperatedDoorOpenSFX.Play();
         }
         else
         {
             BatteryOperatedDoor.GetComponent<Animator>().SetBool("character_nearby", false);
+            //BatteryOperatedDoorCloseSFX.Play();
         }
     }
 

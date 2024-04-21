@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static System.TimeZoneInfo;
 
 public class ExitScript : MonoBehaviour
 {
     private bool Escaping = false;
     public float TransitionTimer;
+    public AudioSource WhooshSFX;
+    public Animator fadeanima;
+    bool WhooshPlayed = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        WhooshPlayed = false;
     }
 
     // Update is called once per frame
@@ -20,10 +22,16 @@ public class ExitScript : MonoBehaviour
         if (Escaping)
         {
             TransitionTimer++;
+            if (!WhooshPlayed)
+            {
+                WhooshSFX.Play(0);
+                WhooshPlayed = true;
+                fadeanima.SetTrigger("FadeOut");
+            }
         }
-        if (TransitionTimer >= 250)
+        if (TransitionTimer >= 450)
         {
-            //
+            SceneManager.LoadScene("SCIFIESCAPEEND");
         }
     }
 
