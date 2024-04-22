@@ -8,9 +8,9 @@ public class ToggleMenuUI : MonoBehaviour
 {
     [SerializeField] private InputActionReference toggleUI;
     [SerializeField] public GameObject LeftRay;
-    //[SerializeField] public GameObject UIMenu;
+    [SerializeField] public GameObject UIMenu;
     private bool IsActive = false;
-    private float Delay = 250;
+    private float Delay = 50;
     private Vector3 InitScale;
 
     private void Start()
@@ -28,6 +28,14 @@ public class ToggleMenuUI : MonoBehaviour
         if (Delay > 0)
         {
             Delay--;
+        }
+        if (UIMenu.transform.localScale.x > 0.0003 & UIMenu.transform.localScale.y > 0.0003 & UIMenu.transform.localScale.z > 0.0003)
+        {
+            UIMenu.SetActive(true);
+        }
+        else
+        {
+            UIMenu.SetActive(false);
         }
     }
 
@@ -52,7 +60,7 @@ public class ToggleMenuUI : MonoBehaviour
             //this.gameObject.SetActive(true);
             //LeftRay.gameObject.SetActive(false);
             //UIMenu.SetActive(true);
-            Delay = 250;
+            Delay = 50;
             IsActive = true;
         }
         if (IsActive & Delay <= 0)
@@ -61,7 +69,7 @@ public class ToggleMenuUI : MonoBehaviour
             //this.gameObject.SetActive(false);
             //LeftRay.gameObject.SetActive(true);
             //UIMenu.SetActive(false);
-            Delay = 250;
+            Delay = 50;
             IsActive = false;
         }
     }

@@ -10,6 +10,8 @@ public class MenuUI : MonoBehaviour
     [SerializeField] public GameObject XRLocomotion;
     [SerializeField] public GameObject XRTeleportRay;
     [SerializeField] public GameObject XRLineRay;
+    private bool StateChanged;
+    private float Delay = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +24,32 @@ public class MenuUI : MonoBehaviour
         XRLineRay.SetActive(true);
     }
 
+    private void Update()
+    {
+        /*
+        if (Delay > 0)
+        {
+            Delay--;
+        }*/
+    }
+
     public void ToggleSnapping()
     {
+        /*
+        if (!StateChanged & Delay <= 0)
+        {
+            XRLocomotion.GetComponent<ActionBasedSnapTurnProvider>().enabled = true;
+            XRLocomotion.GetComponent<ActionBasedContinuousTurnProvider>().enabled = false;
+            Delay = 10;
+            StateChanged = true;
+        }
+        if (StateChanged & Delay <= 0)
+        {
+            XRLocomotion.GetComponent<ActionBasedSnapTurnProvider>().enabled = false;
+            XRLocomotion.GetComponent<ActionBasedContinuousTurnProvider>().enabled = true;
+            Delay = 10;
+            StateChanged = false;
+        }*/
         if (XRLocomotion.GetComponent<ActionBasedSnapTurnProvider>().enabled == false)
         {
             XRLocomotion.GetComponent<ActionBasedSnapTurnProvider>().enabled = true;
@@ -34,10 +60,26 @@ public class MenuUI : MonoBehaviour
             XRLocomotion.GetComponent<ActionBasedSnapTurnProvider>().enabled = false;
             XRLocomotion.GetComponent<ActionBasedContinuousTurnProvider>().enabled = true;
         }
+        //return;
     }
 
     public void ToggleTeleport()
     {
+        /*
+        if (!StateChanged & Delay <= 0)
+        {
+            XRLocomotion.GetComponent<TeleportationProvider>().enabled = true;
+            XRLocomotion.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
+            Delay = 10;
+            StateChanged = true;
+        }
+        if (StateChanged & Delay <= 0)
+        {
+            XRLocomotion.GetComponent<TeleportationProvider>().enabled = false;
+            XRLocomotion.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
+            Delay = 10;
+            StateChanged = false;
+        }*/
         if (XRLocomotion.GetComponent<TeleportationProvider>().enabled == false)
         {
             XRTeleportRay.SetActive(true);
@@ -52,6 +94,7 @@ public class MenuUI : MonoBehaviour
             XRLineRay.SetActive(true);
             XRLocomotion.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
         }
+        //return;
 
     }
 

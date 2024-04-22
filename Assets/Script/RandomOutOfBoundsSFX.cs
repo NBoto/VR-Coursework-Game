@@ -14,7 +14,7 @@ public class RandomOutOfBoundsSFX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayTimer = Random.Range(500, 1200);
+        PlayTimer = Random.Range(80, 550);
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class RandomOutOfBoundsSFX : MonoBehaviour
         {
             AudioClip RandomSFX = SFXClips[Random.Range(0, SFXClips.Length)];
             SFXSource.PlayOneShot(RandomSFX);
-            PlayTimer = Random.Range(500, 1200);
+            PlayTimer = Random.Range(80, 550);
         }
         if (PlayTimer > 0)
         {
